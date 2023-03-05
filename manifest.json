@@ -1,7 +1,16 @@
 {
   "manifest_version": 2,
-  "name": "Vehicle Price Checker",
+  "name": "Car Price Finder",
+  "description": "A Chrome extension to find the average price of a car on CarGurus.com",
   "version": "1.0",
-  "description": "Get the average price of a vehicle on CarGurus.com",
-  "permissions": ["activeTab"]
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Find Car Price"
+  },
+  "permissions": [
+    "activeTab",
+    "https://www.facebook.com/*",
+    "https://www.cargurus.com/*"
+  ]
 }
