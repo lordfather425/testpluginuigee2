@@ -1,23 +1,19 @@
 {
   "manifest_version": 2,
-  "name": "CarGurus Price Checker",
+  "name": "Cargurus VIN Lookup",
   "version": "1.0",
-
+  "description": "Opens Cargurus instant market value page from VIN number",
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "tabs",
+    "*://www.cargurus.com/*"
   ],
-
   "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": false
+    "scripts": ["background.js"],
+    "persistent": true
   },
-
   "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html",
-    "default_title": "CarGurus Price Checker"
+    "default_icon": "icon.png"
   }
 }
