@@ -1,22 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "CarGurus Search",
-  "description": "Search CarGurus for average listing price based on Facebook Marketplace listing",
+  "name": "Vehicle Price Checker",
   "version": "1.0",
-  "permissions": [
-    "activeTab",
-    "storage",
-    "http://*/",
-    "https://*/"
-  ],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
-  "content_scripts": [
-    {
-      "matches": ["https://www.facebook.com/marketplace/*"],
-      "js": ["content.js"]
-    }
-  ]
+  "description": "Get the average price of a vehicle on CarGurus.com",
+  "permissions": ["activeTab"]
 }
